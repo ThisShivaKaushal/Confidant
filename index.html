@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidant</title>
+</head>
+
+<body>
+    <main class="app">
+        <header class="header">
+            <div>
+                <img>
+            </div>
+        </header>
+
+        <section id="uploadpart">
+            <div class="upload-icon">
+                <img>
+            </div>
+
+            <h2>Drop an image here</h2>
+            <p>or select an image from your device</p>
+
+            <button id="choosebutton" class="button">Choose Image</button>
+
+            <input id="fileinput" type="file" accept="image/jpeg, image/png, image/webp" hidden>
+
+
+            <div class="preview">
+                <img>
+                <div id="imageinfo">
+                    <strong id="imagename">image.jpg</strong>
+                    <span id="imagesize">0 KB</span>
+                </div>
+
+                <div class="scorepart">
+                    <div class="score">
+                        <span class="label">Confidence Score</span>
+                        <div id="scorevalue" class="score">100</div>
+                        <span id="scoretext">no sensitive metadata detected</span>
+                    </div>
+                </div>
+
+                <div class="metadatapart">
+                    <div class="metadata">
+                        <h2>Head's up scanning!</h2>
+                        <span id="metadatavalue">0 info</span>
+                    </div>
+
+                    <div id="metadatalist" class="metadatalists">
+                    </div>
+                </div>
+
+                <div class="buttonpart">
+                    <button id="clearbutton">
+                        Clear<img>
+                    </button>
+
+                    <button id="resetbutton" class="resetbuttons">
+                        Choose Another Image
+                    </button>
+                </div>
+
+                <div id="resultpart" class="resultparts hidden">
+
+                    <div class="successicon"><img></div>
+                    <div>
+                        <strong>Image cleaned!</strong>
+                    </div>
+
+                    <a id="downloadbutton" class="button">Donwload Image</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exifr/dist/lite.umd.js"></script>
+
+</body>
+
+</html>
