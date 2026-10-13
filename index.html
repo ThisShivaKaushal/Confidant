@@ -26,53 +26,55 @@
             <button id="choosebutton" class="button">Choose Image</button>
 
             <input id="fileinput" type="file" accept="image/jpeg, image/png, image/webp" hidden>
+        </section>
+        <section id="result" class="result hidden">
 
-
-            <div class="preview">
-                <img>
+            <div class="previewpart">
+                <img id="preview">
                 <div id="imageinfo">
                     <strong id="imagename">image.jpg</strong>
                     <span id="imagesize">0 KB</span>
                 </div>
+            </div>
 
-                <div class="scorepart">
-                    <div class="score">
-                        <span class="label">Confidence Score</span>
-                        <div id="scorevalue" class="score">100</div>
-                        <span id="scoretext">no sensitive metadata detected</span>
-                    </div>
-                </div>
-
-                <div class="metadatapart">
-                    <div class="metadata">
-                        <h2>Head's up scanning!</h2>
-                        <span id="metadatavalue">0 info</span>
-                    </div>
-
-                    <div id="metadatalist" class="metadatalists">
-                    </div>
-                </div>
-
-                <div class="buttonpart">
-                    <button id="clearbutton">
-                        Clear<img>
-                    </button>
-
-                    <button id="resetbutton" class="resetbuttons">
-                        Choose Another Image
-                    </button>
-                </div>
-
-                <div id="resultpart" class="resultparts hidden">
-
-                    <div class="successicon"><img></div>
-                    <div>
-                        <strong>Image cleaned!</strong>
-                    </div>
-
-                    <a id="downloadbutton" class="button">Donwload Image</a>
+            <div class="scorepart">
+                <div class="score">
+                    <span class="label">Confidence Score</span>
+                    <div id="scorevalue" class="score">100</div>
+                    <span id="scoretext">no sensitive metadata detected</span>
                 </div>
             </div>
+
+            <div class="metadatapart">
+                <div class="metadata">
+                    <h2>Head's up scanning!</h2>
+                    <span id="metadatavalue">0 info</span>
+                </div>
+
+                <div id="metadatalist" class="metadatalists">
+                </div>
+            </div>
+
+            <div class="clearpart">
+                <button id="clearbutton">
+                    Clean Image<img>
+                </button>
+
+                <button id="resetbutton" class="resetbuttons">
+                    Choose Another Image
+                </button>
+            </div>
+
+            <div id="resultpart" class="resultparts hidden">
+
+                <div class="successicon"><img></div>
+                <div>
+                    <strong>Image cleaned!</strong>
+                </div>
+
+                <a id="downloadbutton" class="button">Donwload Image</a>
+            </div>
+
         </section>
     </main>
 
